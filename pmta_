@@ -222,8 +222,8 @@ case $1 in
 			echo "traffic_in\ntraffic_out\nconn_in\nconn_out\nqueue_domains\nqueue_recipients\nqueue_megabytes\ntop_domains"
 			exit 0
         fi
-    ;;
-    config)
+	;;
+	config)
 		if [ -n "$CONF_TITLE" ] && [ -n "$CONF_LABEL" ]; then
 			echo "graph_category PowerMTA"
 			echo "graph_title $CONF_TITLE on ${REMOTEHOST}"
